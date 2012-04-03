@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title="" description="">
+    <siteMapNode url="~/" title="Users"  description="Users" >
+      <siteMapNode url="~/Index.aspx" title="Home"  description="Home" />
+      <siteMapNode url="~/Compare.aspx" title="Compare"  description="Compare" />
+      <siteMapNode url="~/Download.aspx" title="Downloads"  description="Downloads" />
+      <siteMapNode url="~/FAQ.aspx" title="FAQ's"  description="FAQ" />
+      <siteMapNode url="~/TermsAndConditions.aspx" title="Resources"  description="Resources" />
+      <siteMapNode url="~/AboutUs.aspx" title="About us"  description="About us" />
+    </siteMapNode>
+    <siteMapNode url="~/UserSide" title="Users"  description="Logged Users" >
+      <siteMapNode url="~/UserSide/Index.aspx" title="Home"  description="User Home" />
+      <siteMapNode url="~/UserSide/UserStatistics.aspx" title="Statistics"  description="User Statistics" />
+      <siteMapNode url="~/UserSide/Uploads.aspx" title="Upload"  description="Upload" />
+      <siteMapNode url="~/UserSide/Download.aspx" title="Downloads"  description="Downloads" />
+      <siteMapNode url="~/UserSide/UserSettings.aspx" title="Settings"  description="User Settings" />
+    </siteMapNode>
+    <siteMapNode url="~/AdminPanel" title="Admins"  description="Admin Users" >
+      <siteMapNode url="~/AdminPanel/AdminLogin.aspx" title="Login"  description="Home" />
+      <siteMapNode url="~/AdminPanel/ViewHDD.aspx" title=" HHD Resource"  description="Compare" />
+      <siteMapNode url="~/AdminPanel/ViewUsers.aspx" title=" Users"  description="About us" />
+      <siteMapNode url="~/AdminPanel/AdminSettings.aspx" title=" Settings"  description="About us" />
+    </siteMapNode>
+   </siteMapNode>
+</siteMap>

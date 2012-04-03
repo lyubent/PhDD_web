@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="AdminPanel_AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="Shortcut Icon" href="../Images/favicon.ico" type="image/x-icon" />
+    <script type='text/javascript' src='../javascript/main.js'></script>
+    <link rel="Stylesheet" href="~/AdminPanel/Style/AdminMain.css" media="screen" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data" method="post">
+        <div id="header">
+            <div class="logo">
+            </div>
+        </div>
+        <div id ="menu"> 
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSourceHomeSide"
+                    StaticDisplayLevels="3"  Orientation="Horizontal" >
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSourceHomeSide" runat="server" 
+                    ShowStartingNode="False" StartingNodeUrl="~/AdminPanel"  />
+         </div>        
+       
+        <!--*** end site map *** -->      
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <div id="footer"></div>
+</body>
+</html>

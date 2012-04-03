@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserPage.master.cs" Inherits="UserSide_UserPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="Shortcut Icon" href="~/Images/favicon.ico" type="image/x-icon" />
+    <script type='text/javascript' src='../javascript/main.js'></script>
+    <link rel="Stylesheet" href="~/UserSide/Style/UserMain.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/assets/skins/sam/resize.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.9.0/build/assets/skins/sam/layout.css">
+    <script src="http://yui.yahooapis.com/2.9.0/build/yahoo-dom-event/yahoo-dom-event.js"></script> 
+    <script src="http://yui.yahooapis.com/2.9.0/build/dragdrop/dragdrop-min.js"></script> 
+    <script src="http://yui.yahooapis.com/2.9.0/build/element/element-min.js"></script> 
+    <script src="http://yui.yahooapis.com/2.9.0/build/animation/animation-min.js"></script> 
+    <script src="http://yui.yahooapis.com/2.9.0/build/resize/resize-min.js"></script>
+    <script src="http://yui.yahooapis.com/2.9.0/build/layout/layout-min.js"></script>
+
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" enctype="multipart/form-data" method="post">
+        <div id="header">
+            <div class="logo">
+            </div>
+        </div>
+        <div id="menu"> 
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSourceHomeSide"
+                    StaticDisplayLevels="3"  Orientation="Horizontal" >
+                </asp:Menu>
+                <asp:SiteMapDataSource ID="SiteMapDataSourceHomeSide" runat="server" 
+                    ShowStartingNode="False" StartingNodeUrl="~/UserSide"  />
+         </div>        
+       
+        <!--*** end site map *** -->      
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <div id="footer"></div>
+</body>
+</html>

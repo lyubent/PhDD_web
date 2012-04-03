@@ -1,0 +1,191 @@
+﻿body
+{
+    background-image:url('../../Images/Index.png');
+    background-repeat:repeat;
+    position : relative;
+    left: 25%;
+    width: 900px;
+}
+
+
+#header
+{
+    width: 900px;
+    height: 200px;
+    background-color:Black;
+}
+#header .logo
+{
+  
+   background-image: url('../../Images/Log.png');
+   background-position: right top;
+    width: 900px;
+    height: 172px;
+ 
+   
+    
+  }
+  
+  #menu
+  {
+    float:left;
+	width:900px;
+	background:#9955aa;
+	font-size:200%;
+	
+	line-height:normal;
+	border-bottom:1px solid Black;
+	}
+	
+	
+#menu ul 
+{
+    float:right;
+	margin:700px;
+	padding:10px 10px 0 50px;
+	list-style:none;
+	
+	
+	}
+	
+#menu li 
+{
+    float:right;
+	display:inline;
+	margin:0;
+	padding:0;
+	
+	}
+#menu a {
+	float:right;
+	background:url('../../Images/tableftF.gif') no-repeat left top;
+	margin:40;
+	padding:0 0 0 4px;
+	text-decoration:White;
+	color:White;
+	
+	}
+#menu a span {
+	
+	display:block;
+	background:url('../../Images/tabrightF.gif') no-repeat right top;
+	
+	padding:5px 15px 4px 6px;
+	color:White;
+	}
+	
+
+
+#wrapper
+{
+    background-color: White;
+    width:875px;
+    height:auto;
+    min-height: 100px;
+    padding:10px;
+    padding-bottom: 40px;
+    border:2px solid purple;
+    margin-top: 20px;
+
+}
+
+div.img
+  {
+  margin:2px;
+  border: 2px solid Black;
+  height:auto;
+  min-height: 220px;
+  width:auto;
+  }
+  
+div.img img
+  {
+  display:inline;
+  margin:10px;
+  border:1px solid #ffffff;
+ 
+    }
+div.img a:hover img
+  {
+  border:1px solid block;
+  }
+div.desc
+  {
+ 
+  font-weight:normal;
+  height:auto;
+  width:auto;
+  margin-left:230px;
+  }
+
+h1
+{
+color:Black;
+text-align:left;
+
+}
+
+h2
+{
+ font-size: 150%; 
+}
+
+p1
+{
+    font-size:115%
+}
+
+p2
+{
+    font-size: 110%;
+    float:left;
+    margin:20px;
+    
+}
+
+/* Newly added*/
+
+.LogoutBtn
+{
+    margin-top: 5px;
+    float: right;
+    width: 90px;
+    height: 35px;
+}
+
+.dataGrid
+{
+    margin:1px;
+    border: 2px solid Gray;
+    height:auto;
+    min-height: 220px;
+    width:800px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.left50
+{
+    margin-left: 50px;
+}
+
+#wrapper .loginPanel
+{
+   margin: 100px 280px; 
+}
+
+#wrapper .loginPanel .LoginBtn
+{
+    margin-top: 5px;
+    margin-left: 182px;
+    width: 90px;
+    height: 35px;
+}
+
+#wrapper .loginPanel span
+{
+    font-size: 18px;
+    font-weight:bold;    
+    padding: 10px 10px;
+    margin: 10px 0;
+}
